@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Source documents</title>
+<meta property="og:title" content="Source documents">
+<meta property="og:description" content="Original Election Commission of India, MSTC, Ministry of Coal and Odisha mining documents, unchanged, with SHA-256 checksums.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://source-documents.shreyam.me/">
+<meta name="description" content="Original Election Commission of India, MSTC, Ministry of Coal and Odisha mining documents, unchanged, with SHA-256 checksums.">
+<style>
+@font-face { font-family: "Mona Sans"; src: url("fonts/MonaSans.woff2") format("woff2"); font-weight: 200 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Mona Sans"; src: url("fonts/MonaSans-Italic.woff2") format("woff2"); font-weight: 200 900; font-style: italic; font-display: swap; }
+body { max-width: 46em; margin: 2em auto; padding: 0 1em; font: 16px/1.55 "Mona Sans", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; color: #111; background: #fff; }
+h1 { font-size: 2em; margin-bottom: 0; }
+h2 { font-size: 1.3em; margin-top: 2em; }
+h3 { font-size: 1.05em; margin-bottom: 0.3em; }
+a { color: #0645ad; }
+table { border-collapse: collapse; margin: 1em 0; font-size: 0.9em; }
+th, td { padding: 3px 9px; text-align: left; vertical-align: top; }
+th { background: #eee; }
+td.n { text-align: right; font-variant-numeric: tabular-nums; }
+code, pre { font-family: Menlo, Consolas, "Courier New", monospace; font-size: 0.9em; }
+pre { background: #f4f4f4; padding: 0.6em; overflow-x: auto; }
+.sub { color: #555; margin-top: 0.2em; }
+.scroll { overflow-x: auto; }
+</style>
+</head>
+<body>
+
+<h1>Source documents</h1>
+<p class="sub">The original files behind the electoral bonds, mining and party donation releases</p>
+
+<p>
+These are the original files behind the electoral bonds, mining and party donation releases, exactly as they were downloaded from the Election Commission of India, MSTC, the Ministry of Coal and the Odisha Directorate of Mines.
+</p>
+<p>
+Government websites change. Files get moved, renamed or taken down, and a dataset is only as good as your ability to go back to where it came from. So every source file is kept here unchanged, with a SHA-256 checksum, and every row in the other releases names the file (and for the donations, the page) it was read from.
+</p>
+
+<h2>Download</h2>
+<p>
+<a href="https://huggingface.co/datasets/shreyamm/india-political-money-source-documents">Hugging Face dataset &rarr;</a>
+</p>
+<div class="scroll"><table>
+<tr><th>Folder</th><th>Holds</th><th>Files</th><th>Size</th></tr>
+<tr><td><code>eci_electoral_bonds/</code></td><td>SBI electoral bond disclosures, 14 and 21 March 2024, and the Supreme Court registry submissions</td><td class=n>13</td><td class=n>724.4 MB</td></tr>
+<tr><td><code>eci_party_contribution_reports_form24a/</code></td><td>Party contribution reports (Form 24A), FY 2022&ndash;23 to 2025&ndash;26</td><td class=n>153</td><td class=n>577.8 MB</td></tr>
+<tr><td><code>eci_electoral_trust_reports/</code></td><td>Electoral trust contribution reports</td><td class=n>56</td><td class=n>266.1 MB</td></tr>
+<tr><td><code>eci_party_expenditure_statements/</code></td><td>Party election expenditure statements</td><td class=n>284</td><td class=n>1.33 GB</td></tr>
+<tr><td><code>mining_mstc_coal_odisha/</code></td><td>MSTC auction result pages, the Ministry of Coal allocation PDF, Odisha lessee register pages</td><td class=n>4,063</td><td class=n>40.6 MB</td></tr>
+</table></div>
+<p>
+To check your copy, run this from the downloaded folder:
+</p>
+<pre>shasum -a 256 -c SHA256SUMS.txt</pre>
+
+<h2>Where they came from</h2>
+<ul>
+<li><b>Election Commission of India:</b> <a href="https://www.eci.gov.in/disclosure-of-electoral-bonds">Disclosure of Electoral Bonds</a>, and the contribution, electoral trust and expenditure reports on the Commission's website.</li>
+<li><b>MSTC:</b> <a href="https://www.mstcecommerce.com/auctionhome/mlcln/mineral_auction_result.jsp">mineral auction results</a>.</li>
+<li><b>Ministry of Coal:</b> <a href="http://coal.gov.in/sites/default/files/2023-05/allocation-trance-wise.pdf">tranche-wise allocation of coal mines</a>.</li>
+<li><b>Directorate of Mines, Odisha:</b> <a href="https://www.odishaminerals.gov.in/MIS/LesseeReport/LesseeReportNew">lessee register</a>, one page per district.</li>
+</ul>
+<p>Everything was fetched from public pages. Nothing needed a login.</p>
+
+<h2>A note on personal data</h2>
+<p>
+Some of the Election Commission's Form 24A and electoral trust reports print the donors' PAN numbers and addresses. They are kept here unchanged because they are the Commission's own public documents and the evidence for everything else. The donation table built from them leaves both out.
+</p>
+
+
+
+
+</body>
+</html>
